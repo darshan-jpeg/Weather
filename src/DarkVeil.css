@@ -1,0 +1,10 @@
+.darkveil-canvas {
+  position: fixed; /* was probably absolute */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* push it behind everything */
+  display: block;
+  object-fit: cover;
+}
