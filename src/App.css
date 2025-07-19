@@ -44,7 +44,7 @@ html, body {
   padding: 40px 30px;
   max-width: 500px;
   margin: 60px auto;
-  color: #000;
+  color: #ffffff;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   text-align: center;
   
@@ -144,4 +144,65 @@ html, body {
 
 .CardStyle p:hover {
   color: #1a73e8;
+}
+/* Air Quality Section */
+
+
+
+
+
+
+.aq-box {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 50px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+  margin: 0 auto;
+  
+
+}
+
+/* AQI Color Themes */
+.level-1 {
+  background-image: linear-gradient( 75.1deg,  rgba(34,126,34,1) 6%, rgba(99,226,17,1) 84.3% );
+}
+.level-2 {
+  background-image: linear-gradient( 75.1deg,  rgb(207, 255, 48) 6%, rgb(196, 231, 58) 84.3% );
+}
+.level-3 {
+  background-image: radial-gradient( circle 708px at 0% 3.4%,  rgba(254,216,7,1) 14.5%, rgba(249,69,28,1) 71.8% );
+}
+.level-4 {
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(214,40,40,1) 0%, rgba(255,195,0,1) 90% );
+}
+.level-5 {
+  background-image: radial-gradient( circle 1588px at -27.3% 144%,  rgba(255,22,22,1) 0%, rgba(0,0,0,1) 43.4%, rgba(0,0,0,1) 65.8%, rgba(255,22,22,1) 100.2% );
+}
+
+.aq-details {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.7;
+  width: 100%;
+  max-width: 400px;
+  align-items: center;
+  text-align: center;
+  max-width: fit-content;
+  margin: 0 auto;
+  margin-top: 20px;
+
 }
