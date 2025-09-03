@@ -1,0 +1,56 @@
+.text-rotate {
+  display: flex;
+  justify-content: center; /* ✅ center horizontally */
+  align-items: center;     /* ✅ center vertically if needed */
+  flex-wrap: wrap;
+  white-space: pre-wrap;
+  position: relative;
+  width: 100%;             /* ✅ allow full-width layout */
+  text-align: center;      /* ✅ center text inside */
+}
+
+
+.text-rotate-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.text-rotate-word {
+  display: inline-flex;
+}
+
+.text-rotate-lines {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.text-rotate-element {
+  display: inline-block;
+}
+
+.text-rotate-space {
+  white-space: pre;
+}
+
+
+.text-rotate-element {
+
+  font-size: 1rem; /* ✅ You can increase this further as needed */
+  font-weight: bold;
+
+  /* ✅ Linear gradient text */
+  background: linear-gradient(to right, #ffffff, #ffffff); /* cyan to blue */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Optional smooth animation look */
+  transition: all 0.3s ease-in-out;
+}

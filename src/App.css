@@ -1,9 +1,15 @@
+*{
+  font-family:sans-serif;
+}
+
 html, body {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
+  border-style: groove;
 }
 
 .darkveil-bg {
@@ -47,6 +53,8 @@ html, body {
   color: #ffffff;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   text-align: center;
+  max-width: fit-content;
+  font-family: 'Times New Roman', Times, serif;
   
 }
 
@@ -78,7 +86,7 @@ html, body {
 .btn {
   width: 120px;
   height: 40px;
-  background: linear-gradient(to top, #00154c, #12376e, #23487f);
+  background: linear-gradient(to top, #8308a8, #660dd9, #000000);
   color: #fff;
   border-radius: 100px;
   border: none;
@@ -166,7 +174,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: fit-content;
+  max-width: max-content;
   margin: 0 auto;
   
 
@@ -190,19 +198,112 @@ html, body {
 }
 
 .aq-details {
-  background-color: rgba(255, 255, 255, 0.05);
+   
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: #000000 0px 0px 10px 0px;
+  border-radius: 20px;
+  
+}
+
+.aq-details p {
+  
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+.ResultCard{
+
+  max-width: max-content;
+  background: transparent;
   padding: 15px 25px;
   border-radius: 12px;
   font-size: 16px;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
-  line-height: 1.7;
-  width: 100%;
-  max-width: 400px;
-  align-items: center;
-  text-align: center;
-  max-width: fit-content;
-  margin: 0 auto;
-  margin-top: 20px;
 
+}
+
+/* Center Stack */
+.center-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+  gap: 32px;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+  .App {
+    padding: 15px 2px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 95vw;
+    font-size: 15px;
+  }
+
+  .city-input {
+    width: 75vw;
+    max-width: 75vw;
+    font-size: 1rem;
+    padding: 0.6rem 0.7rem;
+    margin: 0.7rem auto;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    width: 100px;
+    height: 36px;
+    font-size: 11px;
+  }
+
+  .ResultCard {
+    padding: 10px 4px;
+    border-radius: 10px;
+    font-size: 15px;
+    max-width: 98vw;
+  }
+
+  .aq-box {
+    padding: 7px 7px;
+    font-size: 15px;
+    max-width: 98vw;
+    max-width: fit-content;
+  }
+
+  .aq-details {
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    max-width: 98vw;
+  }
+
+  .aq-details p {
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .text-lg {
+    font-size: 15px;
+    padding: 10px 4px;
+  }
+
+  .MainWrapper {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+  }
 }
